@@ -27,6 +27,8 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\roslyn\vbc.exe.config
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\roslyn\vbc.rsp
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\roslyn\VBCSCompiler.exe
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.SqlServer.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Helpers.dll
@@ -35,6 +37,8 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Razor.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Deployment.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Razor.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.xml
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.SqlServer.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Razor.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Deployment.xml
@@ -46,3 +50,4 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.Core
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CopyComplete
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.pdb
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.AssemblyReference.cache
