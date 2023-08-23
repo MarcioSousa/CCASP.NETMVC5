@@ -50,4 +50,3 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.Core
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CopyComplete
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.pdb
-C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.AssemblyReference.cache
