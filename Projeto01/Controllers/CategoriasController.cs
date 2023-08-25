@@ -33,7 +33,9 @@ namespace Projeto01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = context.Categorias.Find(id);
+            //Categoria categoria = context.Categorias.Find(id);
+            Categoria categoria = context.Categorias.Where(f => f.CategoriaId == id).Include("Produtos.Fabricante").First();
+
             if (categoria == null)
             {
                 return HttpNotFound();
@@ -48,7 +50,9 @@ namespace Projeto01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = context.Categorias.Find(id);
+
+            Categoria categoria = context.Categorias.Where(f => f.CategoriaId == id).Include("Produtos.Fabricante").First();
+
             if (categoria == null)
             {
                 return HttpNotFound();
@@ -63,7 +67,9 @@ namespace Projeto01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = context.Categorias.Find(id);
+            //Categoria categoria = context.Categorias.Find(id);
+            Categoria categoria = context.Categorias.Where(f => f.CategoriaId == id).Include("Produtos.Fabricante").First();
+
             if (categoria == null)
             {
                 return HttpNotFound();

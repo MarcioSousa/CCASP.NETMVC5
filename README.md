@@ -97,3 +97,29 @@ public DbSet<Fabricante> Fabricantes { get; set; }
 - Adaptar todas as visões (Create, Edit, Details, Delete);
 - Inserir glyphicons (ícones) do Bootstrap;
 - Inserir aviso de que foi removido com sucesso ao Deletar.
+# IV - ASSOCIAÇÕES NO ENTITY FRAMEWORK
+- Criar classe Produto;
+- Inserir a ligação entre as classes: 
+- Classe Produto:
+public long? ProdutoId { get; set; }
+public string Nome { get; set; }
+public long? CategoriaId { get; set; }
+public long? FabricanteId { get; set; }
+public Categoria Categoria { get; set; }
+public Fabricante Fabricante { get; set; }
+- Classe Fabricante e Categoria:
+public virtual ICollection<Produto> Produtos { get; set; }
+- Inserir a classe Produto no context;
+- Criar Colletion utilizando opção 'MVC 5 Controller with read/write actions'
+- inserir o seguinte código no Index 'return View(context.Produtos.OrderBy(c=>c.Nome));';
+- Criar a visão Index igual a Visão Fabricante, inserindo dois display for com Fabricante.nome e Categoria.nome;
+- Inserir em layout.cshtml o 'li' de Produtos e aparecerá um erro, é preciso configurar o entity Framework (base de dados);
+- Alterar o EFContext;
+- Insira dados nas bases novas;
+- Incluir no topo da ProdutosController o using System.Data.Entity;
+- Inserir a instrução lambda: var produtos = context.Produtos.Include(c => c.Categoria).Include(f => f.Fabricante).OrderBy(n => n.Nome);return View(produtos);
+- Criar o CRUD utilizando novos códigos (ViewBag);
+- Adapte a visão Details de Fabricantes;
+- Adapte a visão Details de Categorias;
+- Inserir o Partial View em Produtos criando _PorFabricante e _PorCategoria;
+- inserir Partial View no Edit, Delete e Details;

@@ -8,6 +8,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
+
     <div class="panel panel-primary">
         <div class="panel-heading">
             Alteração dos dados de um FABRICANTE
@@ -36,6 +37,9 @@
         </div>
     </div>
 }
+
+@Html.Partial("~/Views/Produtos/_PorFabricante.cshtml", Model.Produtos.ToList());
+
 
 @section ScriptPage {
     <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
