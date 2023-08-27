@@ -1,3 +1,5 @@
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.AssemblyReference.cache
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CoreCompileInputs.cache
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.dll.config
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.pdb
@@ -31,12 +33,17 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.SqlServer.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Modelo.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Servico.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Helpers.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Mvc.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Razor.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Deployment.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Razor.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Persistencia.dll
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Modelo.pdb
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Servico.pdb
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\EntityFramework.SqlServer.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Razor.xml
@@ -46,7 +53,8 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Webpages.Razor.x
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Helpers.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Mvc.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CoreCompileInputs.cache
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Persistencia.pdb
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Persistencia.dll.config
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CopyComplete
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.pdb

@@ -123,3 +123,29 @@ public virtual ICollection<Produto> Produtos { get; set; }
 - Adapte a visão Details de Categorias;
 - Inserir o Partial View em Produtos criando _PorFabricante e _PorCategoria;
 - inserir Partial View no Edit, Delete e Details;
+# V - SEPARANDO A APLICAÇÃO EM CAMADAS
+- Criar camada de negócio (Modelo);
+- No Projeto Web, vai em referencias e adiciona o Modelo;
+- Em modelo, deletar o Class1.cs;
+- Criar duas pastas: Cadastros e Tabelas;
+- Mova Classe Categoria para a pasta Tabelas;
+- Alterar namespace para Modelo.Tabelas;
+- Corrigir todos os erros e colocando Modelo.Tabelas e Modelo.Cadastros;
+- Abra todas as visões e corrija;
+- Crie o projeto de Persistencia;
+- Em Persistencia, adicione a referencia ao Modelo;
+- Instale o entity Framework 6.1.3 em Persistencia;
+- Crie uma pasta chamada Context e jogue os arquivos lá;
+- Crie pasta DAL e dentro crie mais outras duas: Cadastros e Tabelas;
+- Código para EFContex para retirar a plurarização:
+- protected override void OnModelCreating(DbModelBuilder modelBuilder)
+{
+base.OnModelCreating(modelBuilder);
+modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+}
+- Criar as classes na pasta DAL;
+- Criar camada Servico;
+- Adicionar as referências Persistencia e Modelo;
+- Criar as duas pastas e, pasta tabela e dentro, a classe CategoriaServico;
+- Configurar os Controladores;
+- Criar _PartialDetailsContantPanel.cshtml e configurar;
