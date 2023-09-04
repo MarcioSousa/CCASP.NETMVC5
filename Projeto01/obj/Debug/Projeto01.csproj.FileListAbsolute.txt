@@ -1,5 +1,3 @@
-C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.AssemblyReference.cache
-C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CoreCompileInputs.cache
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.dll.config
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Projeto01.pdb
@@ -55,6 +53,8 @@ C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\System.Web.Mvc.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Persistencia.pdb
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\bin\Persistencia.dll.config
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.AssemblyReference.cache
+C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CoreCompileInputs.cache
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.csproj.CopyComplete
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.dll
 C:\Users\Marcio\source\repos\Projeto01\Projeto01\obj\Debug\Projeto01.pdb

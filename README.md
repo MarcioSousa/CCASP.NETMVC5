@@ -149,3 +149,19 @@ modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 - Criar as duas pastas e, pasta tabela e dentro, a classe CategoriaServico;
 - Configurar os Controladores;
 - Criar _PartialDetailsContantPanel.cshtml e configurar;
+# VI - CODE FIRST MIGRATIONS, DATA ANNOTATIONS, VALIDAÇÃO E JQUERYUI
+- Menu tools/nuget Package Manager/Package Manager Console;
+- Selecione nuget.org e Persistencia e digite Enable-Migrations no prompt do package manager console;
+- Em Configuration, mude a instrução AutomaticMigrationsEnabled para true;
+- Em EFContext, mude o contrutor para :
+Database.SetInitializer<EFContext>(new MigrateDatabaseToLatestVersion<EFContext, Configuration>());
+- Abrir references em Modelo e adicionar o Framework System.ComponentModel.DataAnnotations;
+- Fazer adaptação do Modelo utilizando ComponentModel e DataAnnotations;
+- Aparecendo erro, insira em Configuration o código AutomaticMigrationDataLossAllowed = true;
+- Depois de rodar, altere, em Configuration o código AutomaticMigrationDataLossAllowed = false;
+- Na visão Create, em @Html.LabelFor, apague o CategoriaId e FabricanteId;
+- Em controller Produto, em Create, no método GravarProduto(), coloque o PopularViewBag(produto) antes dos dois Return View(Produto);
+- Caso não apareça as mensagens de ValidationSummary(), troque para false, na View Create de Produto;
+- Crie o _PartialEditContentPanel e implemente nas views create e edit de produto;
+- Incrementar JqueryUi (pode ou não incrementar);
+- Ajustar todos os htmls;

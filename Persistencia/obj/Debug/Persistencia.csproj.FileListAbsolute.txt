@@ -8,6 +8,8 @@ C:\Users\Marcio\source\repos\Projeto01\Persistencia\bin\Debug\Modelo.pdb
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\bin\Debug\EntityFramework.xml
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.Migrations.InitialCreate.resources
+C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.csproj.GenerateResource.cache
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
 C:\Users\Marcio\source\repos\Projeto01\Persistencia\obj\Debug\Persistencia.dll

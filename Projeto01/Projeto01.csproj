@@ -213,7 +213,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
     <Content Include="Scripts\DataTables\autoFill.foundation.js" />
@@ -268,8 +267,20 @@
     <Content Include="Scripts\DataTables\responsive.foundation.min.js" />
     <Content Include="Scripts\DataTables\responsive.jqueryui.js" />
     <Content Include="Scripts\DataTables\responsive.jqueryui.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\AUTHORS.txt" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\index.html" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.structure.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.theme.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\LICENSE.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -296,7 +307,6 @@
     <Content Include="Views\Fabricantes\Details.cshtml" />
     <Content Include="Views\Fabricantes\Delete.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Produtos\Index.cshtml" />
     <Content Include="Views\Produtos\Create.cshtml" />
     <Content Include="Views\Produtos\Edit.cshtml" />
@@ -307,6 +317,11 @@
     <Content Include="Views\Produtos\_PartialDetailsContantPanel.cshtml" />
     <Content Include="Views\Fabricantes\_PartialDetailsDeleteContantPanel.cshtml" />
     <Content Include="Views\Categorias\_PartialDetailsDeleteContantPanel.cshtml" />
+    <Content Include="Views\Produtos\_PartialEditContentPanel.cshtml" />
+    <Content Include="Scripts\jquery-ui-1.13.2.custom\package.json" />
+    <Content Include="Views\Fabricantes\_PartialEditContentPanel.cshtml" />
+    <Content Include="Views\Categorias\_PartialEditContentPanel.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

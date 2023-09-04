@@ -10,7 +10,7 @@ namespace Servico.Cadastros
 {
     public class ProdutoServico
     {
-        private ProdutoDAL produtoDAL = new ProdutoDAL();
+        private readonly ProdutoDAL produtoDAL = new ProdutoDAL();
 
         public IQueryable ObterProdutosClassificadosPorNome()
         {
