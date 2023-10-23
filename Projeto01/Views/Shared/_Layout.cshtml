@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Projeto01.Infraestrutura
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -18,12 +20,26 @@
                     </small>
                 </h1>
             </div>
+            <div style="text-align:right">
+                @{ 
+                    if(Html.GetAuthenticateUser().ToString() != "")
+                    {
+                        @Html.GetAuthenticateUser();
+                        @Html.ActionLink(" - Sair", "Logout", "Account");
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Acessar", "Login", "Account", new { area = "Seguranca" }, null);
+                    }
+                }
+            </div>
         </div>
 
         <div class="row">
             <div class="col-xs-3 col-md-3 bg-success">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="liProdutos" role="presentation">@Html.ActionLink("Produtos", "Index", "Produtos")</li>
+                    <li id="liUsuarios" role="presentation">@Html.ActionLink("Usuários", "Index", "Admin", new { area = "Seguranca" }, null)</li>
                     <li id="liCategorias" role="presentation">@Html.ActionLink("Categorias", "Index", "Categorias")</li>
                     <li id="liFabricantes" role="presentation">@Html.ActionLink("Fabricantes", "Index", "Fabricantes")</li>
                 </ul>

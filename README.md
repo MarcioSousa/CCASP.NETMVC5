@@ -165,3 +165,16 @@ Database.SetInitializer<EFContext>(new MigrateDatabaseToLatestVersion<EFContext,
 - Crie o _PartialEditContentPanel e implemente nas views create e edit de produto;
 - Incrementar JqueryUi (pode ou não incrementar);
 - Ajustar todos os htmls;
+# VII - AREAS, AUTENTICAÇÃO E AUTORIZAÇÃO
+- Criar Areas;
+- Ajustar as Views e Controllers de Areas;
+- Instalar pacotes;
+- Configurar Web.Config;
+- Criação Usuarios;
+- Criação IdentityDbContextAplicacao
+- Criação GerenciadorUsuario;
+- Criação IdentityConfig;
+- Criação Controller AdminController em Seguranca;
+- Criado bd IdentityDB;
+- Criar o crud do Usuario;
+- Criar Controlador HomeController em Controller, na raiz do projeto;
