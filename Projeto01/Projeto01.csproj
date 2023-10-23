@@ -368,6 +368,7 @@
     <Compile Include="Areas\Seguranca\SegurancaAreaRegistration.cs" />
     <Compile Include="Areas\Tabelas\Controllers\CategoriasController.cs" />
     <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
+    <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\IdentityDbContextAplicacao.cs" />
     <Compile Include="Global.asax.cs">
@@ -384,6 +385,8 @@
     <Content Include="Scripts\jquery-ui-1.13.2.custom\package.json" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Errors\General.cshtml" />
+    <Content Include="Views\Errors\Http404.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -411,6 +414,7 @@
     <Folder Include="Areas\Tabelas\Data\" />
     <Folder Include="Areas\Tabelas\Views\Shared\" />
     <Folder Include="Areas\Tabelas\Views\Teste\" />
+    <Folder Include="TempData\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

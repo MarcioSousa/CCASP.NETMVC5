@@ -8,6 +8,7 @@ using System.Net;
 using Modelo.Cadastros;
 using Servico.Cadastros;
 using Servico.Tabelas;
+using System.IO;
 
 namespace Projeto01.Areas.Cadastros.Controllers
 {
@@ -39,9 +40,9 @@ namespace Projeto01.Areas.Cadastros.Controllers
 
         // POST: Produtos/Create
         [HttpPost]
-        public ActionResult Create(Produto produto)
+        public ActionResult Create(Produto produto, HttpPostedFileBase logotipo = null, string chkRemoverImagem = null)
         {
-            return GravarProduto(produto);
+            return GravarProduto(produto, logotipo, chkRemoverImagem);
         }
 
         // GET: Produtos/Edit/5
@@ -53,9 +54,9 @@ namespace Projeto01.Areas.Cadastros.Controllers
 
         // POST: Produtos/Edit/5
         [HttpPost]
-        public ActionResult Edit(Produto produto)
+        public ActionResult Edit(Produto produto, HttpPostedFileBase logotipo = null, string chkRemoverImagem = null)
         {
-            return GravarProduto(produto);
+            return GravarProduto(produto, logotipo, chkRemoverImagem);
         }
 
         // GET: Produtos/Delete/5
@@ -107,12 +108,24 @@ namespace Projeto01.Areas.Cadastros.Controllers
                 ViewBag.FabricanteId = new SelectList(fabricanteServico.ObterFabricantesClassificadasPorNome(), "FabricanteId", "Nome", produto.FabricanteId);
             }
         }
-        private ActionResult GravarProduto(Produto produto)
+        private ActionResult GravarProduto(Produto produto, HttpPostedFileBase logotipo, string chkRemverImagem)
         {
             try
             {
+                produto.NomeArquivo = logotipo.FileName;
+                produto.TamanhoArquivo = logotipo.ContentLength;
+
                 if (ModelState.IsValid)
                 {
+                    if (chkRemverImagem != null)
+                    {
+                        produto.Logotipo = null;
+                    }
+                    if (logotipo == null)
+                    {
+                        produto.LogotipoMimeType = logotipo.ContentType;
+                        produto.Logotipo = SetLogotipo(logotipo);
+                    }
                     produtoServico.GravarProduto(produto);
                     return RedirectToAction("Index");
                 }
@@ -124,6 +137,32 @@ namespace Projeto01.Areas.Cadastros.Controllers
                 PopularViewBag(produto);
                 return View(produto);
             }
+        }
+
+        private byte[] SetLogotipo(HttpPostedFileBase logotipo)
+        {
+            var bytesLogotipo = new byte[logotipo.ContentLength];
+            logotipo.InputStream.Read(bytesLogotipo, 0, logotipo.ContentLength);
+            return bytesLogotipo;
+        }
+        
+        public FileContentResult GetLogotipo(long id)
+        {
+            Produto produto = produtoServico.ObterProdutoPorId(id);
+            if(produto != null)
+            {
+                return File(produto.Logotipo, produto.LogotipoMimeType);
+            }
+            return null;
+        }
+
+        public ActionResult DownloadArquivo(long id)
+        {
+            Produto produto = produtoServico.ObterProdutoPorId(id);
+            FileStream fileStream = new FileStream(Server.MapPath("~/tempData/" + produto.NomeArquivo), FileMode.Create, FileAccess.Write);
+            fileStream.Write(produto.Logotipo, 0, Convert.ToInt32(produto.TamanhoArquivo));
+            fileStream.Close();
+            return File(fileStream.Name, produto.LogotipoMimeType, produto.NomeArquivo);
         }
 
     }

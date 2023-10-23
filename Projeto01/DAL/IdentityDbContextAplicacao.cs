@@ -17,7 +17,7 @@ namespace Projeto01.DAL
             return new IdentityDbContextAplicacao();
         }
 
-        public System.Data.Entity.DbSet<Projeto01.Areas.Seguranca.Models.Papel> IdentityRoles { get; set; }
+        //public System.Data.Entity.DbSet<Projeto01.Areas.Seguranca.Models.Papel> IdentityRoles { get; set; }
 
         //public System.Data.Entity.DbSet<Projeto01.Areas.Seguranca.Models.UsuarioViewModel> UsuarioViewModels { get; set; }
 

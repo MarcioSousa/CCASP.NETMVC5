@@ -177,4 +177,10 @@ Database.SetInitializer<EFContext>(new MigrateDatabaseToLatestVersion<EFContext,
 - Criação Controller AdminController em Seguranca;
 - Criado bd IdentityDB;
 - Criar o crud do Usuario;
-- Criar Controlador HomeController em Controller, na raiz do projeto;
+- Criar Controlador HomeController em Controller, na raiz do projeto.
+# VIII - UPLOADS, DOWNLOADS E ERROS
+- Incrementar na tabela produtos;
+- Alterar o Post de Create e Edit;
+- Criar o método SetLogotipo;
+- Download de imagens;
+- Erros de páginas.
