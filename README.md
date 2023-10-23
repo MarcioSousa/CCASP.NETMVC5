@@ -122,7 +122,7 @@ public virtual ICollection<Produto> Produtos { get; set; }
 - Adapte a visão Details de Fabricantes;
 - Adapte a visão Details de Categorias;
 - Inserir o Partial View em Produtos criando _PorFabricante e _PorCategoria;
-- inserir Partial View no Edit, Delete e Details;
+- inserir Partial View no Edit, Delete e Details.
 # V - SEPARANDO A APLICAÇÃO EM CAMADAS
 - Criar camada de negócio (Modelo);
 - No Projeto Web, vai em referencias e adiciona o Modelo;
@@ -148,7 +148,7 @@ modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 - Adicionar as referências Persistencia e Modelo;
 - Criar as duas pastas e, pasta tabela e dentro, a classe CategoriaServico;
 - Configurar os Controladores;
-- Criar _PartialDetailsContantPanel.cshtml e configurar;
+- Criar _PartialDetailsContantPanel.cshtml e configurar.
 # VI - CODE FIRST MIGRATIONS, DATA ANNOTATIONS, VALIDAÇÃO E JQUERYUI
 - Menu tools/nuget Package Manager/Package Manager Console;
 - Selecione nuget.org e Persistencia e digite Enable-Migrations no prompt do package manager console;
@@ -164,7 +164,7 @@ Database.SetInitializer<EFContext>(new MigrateDatabaseToLatestVersion<EFContext,
 - Caso não apareça as mensagens de ValidationSummary(), troque para false, na View Create de Produto;
 - Crie o _PartialEditContentPanel e implemente nas views create e edit de produto;
 - Incrementar JqueryUi (pode ou não incrementar);
-- Ajustar todos os htmls;
+- Ajustar todos os htmls.
 # VII - AREAS, AUTENTICAÇÃO E AUTORIZAÇÃO
 - Criar Areas;
 - Ajustar as Views e Controllers de Areas;
